@@ -3,7 +3,7 @@ Ext.define('App.view.ContactForm', {
   alias: 'widget.contactform',
   title: 'Nuevo Contacto',
   icon: 'resources/images/user_add.png',
-  width: 650,
+  width: 300,
   layout: 'fit',
   resizable: false,
   closeAction: 'hide',
@@ -26,7 +26,7 @@ Ext.define('App.view.ContactForm', {
       msgTarget: 'side',
     },
     items: [{
-      columnWidth: 0.5,
+      columnWidth: 2,
       border: false,
       items: [{
         xtype: 'textfield',
@@ -77,26 +77,6 @@ Ext.define('App.view.ContactForm', {
         xtype: 'textfield',
         name: 'mobile',
         fieldLabel: 'Celular',
-        allowBlank: true,
-      }]
-    }, {
-      columnWidth: 0.5,
-      border: false,
-      items: [{
-        xtype: 'combobox',
-        name: 'priceList',
-        fieldLabel: 'Lista de precios',
-        emptyText: 'Ninguna',
-        editable: false,
-        store: new Ext.data.SimpleStore({
-          data: [
-            [0, 'Ninguna'],
-            [1, 'General']
-          ],
-          fields: ['value', 'text'],
-        }),
-        valueField: 'value',
-        displayField: 'text',
         allowBlank: true,
       }, {
         xtype: 'combobox',
