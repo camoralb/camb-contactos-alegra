@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/01/2018, 06:11:48 PM
+    Author     : cmorales
+    Una clase de ccs para usar los silky icons de famfamfam
+    Galeria: http://famfamfam.com/lab/icons/silk/previews/index_abc.png
+
+*/
+
+
+
+.icon-add {
+    height: 16px;
+    width: 16px;
+    background-image: url(../images/add.png);
+}
+
+.icon-delete {
+    height: 16px;
+    width: 16px;
+    background-image: url(../images/delete.png);
+}
+
+.icon-information {
+    height: 16px;
+    width: 16px;
+    background-image: url(../images/information.png);
+}
+
+.icon-user {
+    height: 16px;
+    width: 16px;
+    background-image: url(../images/user_suit.png);
+}
+

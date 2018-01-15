@@ -1,0 +1,37 @@
+<!-- application/layouts/scripts/layout.phtml -->
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <title>CAMB - Contactos :: ALEGRA</title>
+  <?php
+		echo $this->headLink()
+			->appendStylesheet('ext-4.2.2.1144/resources/css/ext-all.css')
+                        ->appendStylesheet('ext-4.2.2.1144/resources/css/ext-all-neptune.css')
+			->appendStylesheet('resources/css/app.css')
+                        ->appendStylesheet('resources/css/camb-icons.css');
+	?>
+	<?php
+		echo $this->headScript()
+			->appendFile('ext-4.2.2.1144/ext-all.js')
+                        ->appendFile('ext-4.2.2.1144/ext-theme-neptune.js')
+                        ->appendFile('ext-4.2.2.1144/locale/ext-lang-es.js')
+                        ->appendFile('app.js');
+	?>
+</head>
+<body>
+<div id="header" style="background-color: #EEEEEE; height: 30px;">
+    <div id="header-logo" style="float: left">
+        <b>App demostración consumo REST API Clientes de Alegra</b> / Ing. Carlos Morales.
+    </div>
+    <div id="header-navigation" style="float: right">
+        <!--a href="<?php echo $this->url(
+            array('controller'=>'guestbook'),
+            'default',
+            true) ?>"></a-->
+    </div>
+</div>
+<?php echo $this->layout()->content ?>
+</body>
+</html>
