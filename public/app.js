@@ -4,7 +4,7 @@ Ext.application({
   launch: function() {
     Ext.widget('contactslist', {
       width: '100%',
-      height: 400,
+      height: 600,
       renderTo: document.body
     });
   }
