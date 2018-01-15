@@ -131,7 +131,7 @@ Ext.define('App.controller.ContactsController', {
             type.push("provider");
         }
         values.type = type;
-        alert(JSON.stringify(values));
+        //alert(JSON.stringify(values));
 
         //alert(JSON.stringify(values));
 
